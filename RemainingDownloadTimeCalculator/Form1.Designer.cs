@@ -36,8 +36,8 @@
             this.labelSpeed = new System.Windows.Forms.Label();
             this.btnCalc = new System.Windows.Forms.Button();
             this.labelTimeLeft = new System.Windows.Forms.Label();
-            this.radioMBs = new System.Windows.Forms.RadioButton();
-            this.radioKBs = new System.Windows.Forms.RadioButton();
+            this.radioBtnMBs = new System.Windows.Forms.RadioButton();
+            this.radioBtnKBs = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -72,7 +72,7 @@
             // radioBtnGB
             // 
             this.radioBtnGB.AutoSize = true;
-            this.radioBtnGB.Location = new System.Drawing.Point(227, 7);
+            this.radioBtnGB.Location = new System.Drawing.Point(242, 7);
             this.radioBtnGB.Name = "radioBtnGB";
             this.radioBtnGB.Size = new System.Drawing.Size(35, 16);
             this.radioBtnGB.TabIndex = 3;
@@ -98,7 +98,7 @@
             // 
             // btnCalc
             // 
-            this.btnCalc.Location = new System.Drawing.Point(301, 36);
+            this.btnCalc.Location = new System.Drawing.Point(295, 31);
             this.btnCalc.Name = "btnCalc";
             this.btnCalc.Size = new System.Drawing.Size(75, 23);
             this.btnCalc.TabIndex = 6;
@@ -115,35 +115,35 @@
             this.labelTimeLeft.TabIndex = 7;
             this.labelTimeLeft.Text = "剩余：";
             // 
-            // radioMBs
+            // radioBtnMBs
             // 
-            this.radioMBs.AutoSize = true;
-            this.radioMBs.Location = new System.Drawing.Point(56, 3);
-            this.radioMBs.Name = "radioMBs";
-            this.radioMBs.Size = new System.Drawing.Size(47, 16);
-            this.radioMBs.TabIndex = 9;
-            this.radioMBs.TabStop = true;
-            this.radioMBs.Text = "MB/s";
-            this.radioMBs.UseVisualStyleBackColor = true;
+            this.radioBtnMBs.AutoSize = true;
+            this.radioBtnMBs.Location = new System.Drawing.Point(56, 3);
+            this.radioBtnMBs.Name = "radioBtnMBs";
+            this.radioBtnMBs.Size = new System.Drawing.Size(47, 16);
+            this.radioBtnMBs.TabIndex = 9;
+            this.radioBtnMBs.TabStop = true;
+            this.radioBtnMBs.Text = "MB/s";
+            this.radioBtnMBs.UseVisualStyleBackColor = true;
             // 
-            // radioKBs
+            // radioBtnKBs
             // 
-            this.radioKBs.AutoSize = true;
-            this.radioKBs.Location = new System.Drawing.Point(3, 3);
-            this.radioKBs.Name = "radioKBs";
-            this.radioKBs.Size = new System.Drawing.Size(47, 16);
-            this.radioKBs.TabIndex = 8;
-            this.radioKBs.TabStop = true;
-            this.radioKBs.Text = "KB/s";
-            this.radioKBs.UseVisualStyleBackColor = true;
+            this.radioBtnKBs.AutoSize = true;
+            this.radioBtnKBs.Location = new System.Drawing.Point(0, 3);
+            this.radioBtnKBs.Name = "radioBtnKBs";
+            this.radioBtnKBs.Size = new System.Drawing.Size(47, 16);
+            this.radioBtnKBs.TabIndex = 8;
+            this.radioBtnKBs.TabStop = true;
+            this.radioBtnKBs.Text = "KB/s";
+            this.radioBtnKBs.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.radioKBs);
-            this.panel1.Controls.Add(this.radioMBs);
+            this.panel1.Controls.Add(this.radioBtnKBs);
+            this.panel1.Controls.Add(this.radioBtnMBs);
             this.panel1.Location = new System.Drawing.Point(186, 33);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(109, 45);
+            this.panel1.Size = new System.Drawing.Size(103, 45);
             this.panel1.TabIndex = 10;
             // 
             // Form1
@@ -181,8 +181,8 @@
         private System.Windows.Forms.Label labelSpeed;
         private System.Windows.Forms.Button btnCalc;
         private System.Windows.Forms.Label labelTimeLeft;
-        private System.Windows.Forms.RadioButton radioMBs;
-        private System.Windows.Forms.RadioButton radioKBs;
+        private System.Windows.Forms.RadioButton radioBtnMBs;
+        private System.Windows.Forms.RadioButton radioBtnKBs;
         private System.Windows.Forms.Panel panel1;
     }
 }

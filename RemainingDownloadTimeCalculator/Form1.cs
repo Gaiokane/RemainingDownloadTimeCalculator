@@ -20,7 +20,7 @@ namespace RemainingDownloadTimeCalculator
         private void Form1_Load(object sender, EventArgs e)
         {
             radioBtnMB.Checked = true;
-            radioKBs.Checked = true;
+            radioBtnKBs.Checked = true;
 
             txtboxSize.Text = "100";
             txtboxSpeed.Text = "600";
@@ -28,8 +28,18 @@ namespace RemainingDownloadTimeCalculator
 
         private void btnCalc_Click(object sender, EventArgs e)
         {
-            double size = Convert.ToDouble(txtboxSize.Text);
-            double speed = Convert.ToDouble(txtboxSpeed.Text);
+            double size = Convert.ToDouble(txtboxSize.Text);//radioBtnMB.Checked==true
+            double speed = Convert.ToDouble(txtboxSpeed.Text);//radioBtnKBs.Checked==true
+
+            if (radioBtnGB.Checked == true)
+            {
+                size = size * 1024;
+            }
+            if (radioBtnMBs.Checked == true)
+            {
+                speed = speed * 1024;
+            }
+
             labelTimeLeft.Text = "剩余：" + DownloadTime(size, speed);
         }
 
